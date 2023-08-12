@@ -5,16 +5,12 @@
  */
 int main(void)
 {
-        int number = 0;
+	int i;
 
-        while (number <= 9)
-        {
-                if (number != 10)
-                {
-                putchar(number);
-                }
-                number++;
-        }
-        putchar('\n');
-        return (0);
+	for (i = 0; i < 10; i++)
+	{
+		printf("%d", i);
+	}
+	putchar('\n');
+	return (0);
 }
