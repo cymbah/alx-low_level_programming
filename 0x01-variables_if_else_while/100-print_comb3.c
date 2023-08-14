@@ -5,27 +5,28 @@
  */
 int main(void)
 {
-	int i;
-	int j;
+	int i = '0';
+	int j = '0';
 
-	for (i = 0; i < 9; i++)
+	while (i <= '9')
 	{
-		for (j = i + 1; j < 10; j++)
+		while (j <= '9')
 		{
-			if (i != j)
+			if (i < j)
 			{
-				putchar(i + '0');
-				putchar(j + '0');
-				if (i != '8' && j != '9')
+				putchar(i);
+				putchar(j);
+				if (i != '8' || (i == '8' && j != '9'))
 				{
 					putchar(',');
 					putchar(' ');
 				}
-				else
-					continue;
 			}
-
+			j++;
 		}
+		i++;
+		j = '0';
 	}
+	putchar('\n');
 	return (0);
 }
