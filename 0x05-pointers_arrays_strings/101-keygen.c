@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - entry pnty genrates a random password
+ * main - entry point generates a random password
  *
  * Return: the generated password
  */
